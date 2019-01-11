@@ -8,13 +8,26 @@ steve = Student.new
 steve.first_name = "Steve"
 steve.last_name = "Jobs"
 
+joey = Student.new
+joey.first_name = "Joey"
+joey.last_name = "O'Dell"
+
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Jones"
+
 avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
 
-some_knowledge = avi.teach 
+some_knowledge = avi.teach
 
-steve.learn(some_knowledge)
+3.times{steve.learn(avi.teach)}
+4.times{joey.learn(avi.teach)}
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+puts "\nSteve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"; print "\n"
+
+puts "Steve knows: "; steve.knowledge.each {|x| puts x + ","}; print "\n"
+
+puts "Joey knows: "; joey.knowledge.each {|x| puts x + ","}; print "\n"
