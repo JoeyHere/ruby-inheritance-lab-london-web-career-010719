@@ -28,6 +28,6 @@ some_knowledge = avi.teach
 
 puts "\nSteve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"; print "\n"
 
-puts "Steve knows: "; steve.knowledge.each {|x| puts x + ","}; print "\n"
+puts "Steve knows: "; steve.knowledge.each {|x| puts x}; print "\n"
 
-puts "Joey knows: "; joey.knowledge.each {|x| puts x + ","}; print "\n"
+puts "Joey knows: "; joey.knowledge.each {|x| puts x}; print "\n"
